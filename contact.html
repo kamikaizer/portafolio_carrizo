@@ -1,144 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+<link rel="shortcut icon" type="image/jpg" href="./images/WhatsApp Image 2021-09-09 at 16.45.16.jpeg"/>
 
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <title>Pagina carrizo</title>
+  </head>
+  <body>
 
-        <title>CSS Grids Gallery</title>
-    </head>
-    <style>
-      *,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; 
-}
+   
+    <header class="site-navbar" role="banner">
 
-html {
-  box-sizing: border-box;
-  font-size: 62.5%; 
-}
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-11 col-xl-2">
+            <h1 class="mb-0 site-logo"><img src="./images/WhatsApp Image 2021-09-09 at 16.45.16.jpeg" alt="" srcset="" style="height: 70px;"></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
 
-body {
-  font-family: "Nunito", sans-serif;
-  color: #333;
-  font-weight: 300;
-  line-height: 1.6; 
-}
+                <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                    <li><a href="index.html"><span>Inicio</span></a></li>
+                    <li><a href="portafolio.html"><span>Portafolio</span></a></li>
+                    <li><a href="nft.html"><span>NFT</span></a></li>
+                    <li><a href="./about.html"><span>About</span></a></li>
+                <li class="active"><a href="contact.html"><span>Contacto</span></a></li>
+              </ul>
+            </nav>
+          </div>
+          <main style="margin-top: 50px;">
 
-.container {
-  width: 60%;
-  margin: 2rem auto; 
-}
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </div>
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw);
-  grid-gap: 1.5rem; 
-}
 
-.gallery__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block; 
-}
 
-.gallery__item--1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
 
-  /** Alternative Syntax **/
-  /* grid-column: 1 / span 2;  */
-  /* grid-row: 1 / span 2; */
-}
 
-.gallery__item--2 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 3;
 
-  /** Alternative Syntax **/
-  /* grid-column: 3 / span 2;  */
-  /* grid-row: 1 / span 2; */
-}
 
-.gallery__item--3 {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 6;
 
-  /** Alternative Syntax **/
-  /* grid-column: 5 / span 4;
-  grid-row: 1 / span 5; */
-}
 
-.gallery__item--4 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 6;
 
-  /** Alternative Syntax **/
-  /* grid-column: 1 / span 4;  */
-  /* grid-row: 3 / span 3; */
-}
-
-.gallery__item--5 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 6;
-  grid-row-end: 9;
-
-  /** Alternative Syntax **/
-  /* grid-column: 1 / span 4; */
-  /* grid-row: 6 / span 3; */
-}
-
-.gallery__item--6 {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 6;
-  grid-row-end: 9;
-
-  /** Alternative Syntax **/
-  /* grid-column: 5 / span 4; */
-  /* grid-row: 6 / span 3; */
-}
-    </style>
-    <body>
+      <footer style="margin-top: 50px;">
         <div class="container">
-            <div class="gallery">
-                <figure class="gallery__item gallery__item--1">
-                    <img src="./images/coso.jpg" alt="Gallery image 1" class="gallery__img">
-                </figure>
-                <figure class="gallery__item gallery__item--2">
-                    <img src="./images/efimero.jpg" alt="Gallery image 2" class="gallery__img">
-                </figure>
-                <figure class="gallery__item gallery__item--3">
-                    <img src="./images/Evita Peron By HAZEF.jpg" alt="Gallery image 3" class="gallery__img">
-                </figure>
-                <figure class="gallery__item gallery__item--4">
-                    <img src="./images/HAzef.jpg" alt="Gallery image 4" class="gallery__img">
-                </figure>
-                <figure class="gallery__item gallery__item--5">
-                    <img src="./images/Kala corla.jpg" alt="Gallery image 5" class="gallery__img">
-                </figure>
-                <figure class="gallery__item gallery__item--6">
-                    <img src="./images/Laslo.jpg" alt="Gallery image 6" class="gallery__img">
-                </figure>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>2021 &copy; | <a href="https://github.com/kamikaizer" target="_blank">Martín 又吉</a> </p>   
             </div>
+          </div>
         </div>
-    </body>
+      </footer>
+</main>
+
+
+          </div>
+
+        </div>
+      </div>
+      
+    </header>
+
+  
+
+
+
+  </body>
 </html>
